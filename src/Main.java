@@ -3,6 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        runHarga();
+    }
+
+    private static void runHarga() {
         // define input variables
         int inPembelian, inDisc;
 
@@ -42,7 +46,7 @@ public class Main {
         System.out.println("Harga Bayar = Rp" +outBayar);
     }
 
-    public static String formatRupiah(int value) {
+    private static String formatRupiah(int value) {
         DecimalFormat df = new DecimalFormat("###,###,###");
         return df.format(value);
     }
